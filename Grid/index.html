@@ -16,8 +16,10 @@
     <link rel="stylesheet" href="CSS/style.grid.css">
     <style>
         body {
+            display: grid;
+
             box-sizing: border-box;
-            max-width: 1000px;
+
             width: 100%;
 
         }
@@ -37,7 +39,7 @@
 
         .header-logo {
             grid-area: header-logo;
-            margin-left: 168px;
+            margin-left: 20%;
 
         }
 
@@ -243,6 +245,7 @@
         .img2 {
             grid-column: 8/12;
             grid-row: 1;
+
         }
 
         .me {
@@ -295,15 +298,109 @@
 
         }
 
-        .button2 {}
+        .button2 {
+            border: 1px solid #A4B7B1;
+            width: 186px;
+            height: 56px;
+            margin-top: 30px;
+            box-shadow: 0 -3px rgb(118, 132, 91) inset;
+            transition: 0.2s;
+            font-family: 'Work Sans';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 19px;
+            /* identical to box height */
+
+            text-transform: uppercase;
+
+            color: #053634;
+        }
+
+        .button2:hover {
+            background: rgb(155, 179, 149);
+        }
+
+        .button2:active {
+            background: rgb(147, 147, 33);
+            box-shadow: 0 3px rgb(112, 134, 95) inset;
+        }
+
+
 
         .sercle1 {
             border-radius: 50%;
             width: 150px;
             height: 150%;
             background-color: rgb(247, 206, 81);
-            p
+
         }
+
+        .services {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        }
+
+        .services_1 {
+            grid-column: 1 /6;
+
+
+        }
+
+        .services_2 {
+            grid-column: 6/10;
+            width: 914px;
+            height: 644px;
+        }
+
+        .serv_title {
+            width: 191px;
+            height: 64px;
+            left: 168px;
+            top: 2518px;
+
+            font-family: 'Playfair Display';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 64px;
+            /* identical to box height */
+
+            letter-spacing: 0.02em;
+            text-transform: capitalize;
+
+            color: #053634;
+
+        }
+
+        .serv1 {
+            font-family: 'Work Sans', sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 26px;
+            line-height: 180%;
+            /* identical to box height, or 47px */
+
+            text-transform: capitalize;
+
+            color: #053634;
+
+        }
+
+        .serv2 .serv3 {
+            font-family: 'Work Sans';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 220%;
+            /* or 40px */
+
+
+            color: #053634;
+
+        }
+
+        .serv3 {}
     </style>
 </head>
 
@@ -361,7 +458,7 @@
 
         </div>
     </div>
-    <section>
+    <section class="aboutme1">
         <div class="aboutme">
             <div class="me">
                 <div class="sercle1"></div>
@@ -370,9 +467,10 @@
                 <p class="aboutme__p">A pellentesque pretium feugiat vel morbi sagittis lorem habitasse cursus.
                     Suspendisse tempus
                     rhoncus enim pellentesque est in neque, elit mattis vehicula vitae eget. Viverra imperdiet felis
-                    sollicitudin tesque cursus sit.
+                    sollicitudin tesque cursus sit.</p>
 
-                    Feugiat hac porttitor sem dictum velit, elementum odio. Sed ipsum quis nec ut eget facilisis.
+                <p class="aboutme__p"> Feugiat hac porttitor sem dictum velit, elementum odio. Sed ipsum quis nec ut
+                    eget facilisis.
                     Quis nibh bibendum nisl quis placerat proin tortor. Mattis in neque, elit mattis morbi sagittis
                     lorem
                     habitasse consequat.
@@ -384,6 +482,28 @@
                 <img class="img2" src="Images/me2.jpg">
             </div>
         </div>
+    </section>
+    <section class="services">
+        <div class="services_1">
+            <div>elipse</div>
+            <h3 class="serv_title">Services</h3>
+            <p class="serv_1">Some of my capabilities for your solutions.</p>
+            <p class="serv_2">Feugiat hac porttitor sem dictum velit, elementum odio.
+                Sed ipsum quis nec eget facilisis. Quis nibh ut bibendum nisl quis placerat proin tortor. Mattis in
+                neque.</p>
+            <p class="serv3">Feugiat hac porttitor sem dictum velit, elementum odio. Sed ipsum quis nec eget facilisis
+                quis nibh ut
+                bibendum.</p>
+            <button>Contact me</button>
+
+        </div>
+        <div class="services_2">
+            <img src="" alt="">
+            <p></p>
+            <p></p>
+            <p></p>
+        </div>
+
     </section>
 </body>
 
