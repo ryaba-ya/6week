@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/style.norm copy.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.grid.css">
+    <style>
+        body {
+            box-sizing: border-box;
+            max-width: 1000px;
+            width: 100%;
+
+        }
+
+        .header {
+            display: grid;
+
+            grid-template-columns: 1fr 2fr;
+            grid-template-areas: "  header-logo header-nav "
+                " header-text  header-img ";
+            width: 1920px;
+            height: 911px;
+            align-items: center;
+            min-height: 964px;
+            background-color: #F0F1EA;
+        }
+
+        .header-logo {
+            grid-area: header-logo;
+            margin-left: 168px;
+
+        }
+
+        .header-nav {
+            grid-area: header-nav;
+            text-decoration: none;
+            margin-left: 252px;
+
+
+        }
+
+
+
+        .slider {
+            grid-area: header-text;
+            margin-left: 168px;
+            margin-right: 100px;
+
+        }
+
+        .headerimage {
+            grid-area: header-img;
+            width: 1193px;
+            height: 814px;
+
+
+        }
+
+        h1 {
+            font-family: 'Playfair Display';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 66px;
+            line-height: 126%;
+            /* or 83px */
+
+            letter-spacing: 0.02em;
+            text-transform: capitalize;
+
+            color: #053634;
+            width: 459px;
+            height: 164px;
+            margin-bottom: 22px;
+
+        }
+
+        .header-nav a {
+
+            font-family: 'Work Sans';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 19px;
+            /* identical to box height */
+
+            text-transform: uppercase;
+            text-decoration: none;
+            color: #053634;
+            margin-right: 47px;
+
+        }
+
+        .header-nav a:hover {
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            border-radius: 10%;
+
+
+
+        }
+
+        .search {
+            margin-right: 60px;
+        }
+
+        .header-text {
+            width: 469px;
+            height: 114px;
+            left: 168px;
+            top: 496px;
+
+            font-family: 'Work Sans', sans-serif;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 220%;
+            /* or 40px */
+
+
+            color: #053634;
+
+        }
+
+        .header-button {
+            margin-top: 60px;
+            width: 209px;
+            height: 56px;
+            left: 168px;
+            top: 670px;
+
+            border: 1px solid #A4B7B1;
+        }
+
+        .buttona {
+            width: 119px;
+            height: 19px;
+            left: 200px;
+            top: 688px;
+
+            font-family: 'Work Sans';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 19px;
+            /* identical to box height */
+
+            text-transform: uppercase;
+            text-decoration: none;
+            color: #053634;
+
+        }
+
+        .brands_icons {
+            display: grid;
+            grid-template-rows: 2fr 1fr;
+            grid-template-areas: "logos"
+                "rectangle";
+
+        }
+
+        .logos {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            align-items: center;
+            grid-template-areas: "logo1 logo2 logo3 logo4 logo5";
+            justify-items: center;
+            grid-area: logos;
+            margin-top: 90px;
+            margin-bottom: 90px;
+            margin-left: 200px;
+
+
+
+        }
+
+        .rectangle {
+            grid-area: rectangle;
+        }
+
+        .logo1 {
+            grid-area: logo1;
+            margin-right: 164px;
+
+        }
+
+        .logo2 {
+            grid-area: logo2;
+
+        }
+
+        .logo3 {
+            grid-area: logo3;
+
+        }
+
+        .logo4 {
+            grid-area: logo4;
+
+        }
+
+        .logo5 {
+            grid-area: logo5;
+        }
+
+        .aboutme {
+            width: 1561px;
+            height: 829px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas: "aboutme_img me";
+            gap: 10px;
+            margin-top: 100px;
+            margin-left: 60px;
+
+        }
+
+        .aboutme_img {
+            grid-area: aboutme_img;
+            position: relative;
+            display: grid;
+            grid-template-columns: repeat(12 1fr);
+            margin-left: 168px;
+
+        }
+
+        .img1 {
+            grid-column: 1/9;
+            grid-row: 1;
+
+            z-index: 1;
+            margin-top: -90px;
+        }
+
+        .img2 {
+            grid-column: 8/12;
+            grid-row: 1;
+        }
+
+        .me {
+            grid-area: me;
+            margin-left: 125px;
+            align-self: center;
+        }
+
+        h2 {
+            font-family: 'Playfair Display';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 64px;
+            /* identical to box height */
+            margin-top: 0;
+            letter-spacing: 0.02em;
+            text-transform: capitalize;
+
+            color: #053634;
+        }
+
+        .aboutme_p {
+            font-family: 'Work Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 26px;
+            line-height: 180%;
+            /* identical to box height, or 47px */
+
+            text-transform: capitalize;
+
+            color: #053634;
+        }
+
+        .aboutme__p {
+            width: 745px;
+            height: 111px;
+            left: 984px;
+            top: 1676px;
+            font-family: 'Work Sans', sans-serif;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 220%;
+            /* or 40px */
+
+
+            color: #053634;
+
+        }
+
+        .button2 {}
+
+        .sercle1 {
+            border-radius: 50%;
+            width: 150px;
+            height: 150%;
+            background-color: rgb(247, 206, 81);
+            p
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <a href="#" class="header-logo">
+            <img src="Images/logo.png" alt="logo">
+        </a>
+        <nav class="header-nav">
+            <a href="#" class="header-nav-link">Home</a>
+            <a href="#" class="header-nav-link">About</a>
+            <a href="#" class="header-nav-link">Services</a>
+            <a href="#" class="header-nav-link">Works</a>
+            <a href="#" class="header-nav-link">Blog</a>
+            <a href="#" class="header-nav-link">Contact</a>
+            <a href="#" class="search">
+                <img src="Images/search.png" alt="logo">
+            </a>
+            <a href="#" class="burg">
+                <img src="Images/menuburger.png" alt="logo">
+            </a>
+        </nav>
+
+        <div class="slider">
+            <h1 class="header-title">Nautical Modern Style</h1>
+            <span class="header-text">Suspendisse tempus rhoncus enim
+                pellentesque est vehicula vitae eget. Viverra imperdiet
+                felis sollicitudin pellentesque cursus sit feugiat hac porttitor.</span>
+            <button class="header-button">
+                <a class="buttona" href="#">View Project</a>
+                <svg width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M12.9422 0L11.882 1.07084L15.107 4.25584H0V5.74416H15.107L11.8828 8.9299L12.9422 10L18 5L12.9422 0Z"
+                        fill="#053634" />
+                </svg>
+            </button>
+        </div>
+        <div class="headerimage">
+            <img class="header-pic" src="Images/slider.png" alt="">
+        </div>
+
+    </header>
+    <div class="brands_icons">
+        <div class="rectangle">
+            <svg width="1920" height="1" viewBox="0 0 1920 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="1920" height="1" fill="#E5E7DD" />
+            </svg>
+        </div>
+        <div class="logos">
+            <div class="logo1"><img src="Images/logo1.svg" alt=""></div>
+            <div class="logo2"><img src="Images/logo2.svg" alt=""></div>
+            <div class="logo3"><img src="Images/logo3.svg" alt=""></div>
+            <div class="logo4"><img src="Images/logo4.svg" alt=""></div>
+            <div class="logo5"><img src="Images/logo6.svg" alt=""></div>
+
+        </div>
+    </div>
+    <section>
+        <div class="aboutme">
+            <div class="me">
+                <div class="sercle1"></div>
+                <h2>About me</h2>
+                <p class="aboutme_p">"Everything is designed. Few things are designed well."</p>
+                <p class="aboutme__p">A pellentesque pretium feugiat vel morbi sagittis lorem habitasse cursus.
+                    Suspendisse tempus
+                    rhoncus enim pellentesque est in neque, elit mattis vehicula vitae eget. Viverra imperdiet felis
+                    sollicitudin tesque cursus sit.
+
+                    Feugiat hac porttitor sem dictum velit, elementum odio. Sed ipsum quis nec ut eget facilisis.
+                    Quis nibh bibendum nisl quis placerat proin tortor. Mattis in neque, elit mattis morbi sagittis
+                    lorem
+                    habitasse consequat.
+                </p>
+                <button class="button2">Read more</button>
+            </div>
+            <div class="aboutme_img">
+                <img class="img1" src="Images/me1.jpg">
+                <img class="img2" src="Images/me2.jpg">
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
