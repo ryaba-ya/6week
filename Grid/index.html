@@ -18,6 +18,8 @@
         body {
             box-sizing: border-box;
             width: 100%;
+            height: 100%;
+
         }
 
         .header_grid {
@@ -51,13 +53,14 @@
             grid-template-areas: "slider_title slider_image";
 
 
+
         }
 
         .logo {
             /* name_area */
             grid-area: logo;
             /* position */
-            padding-left: 25%;
+            padding-left: 15%;
         }
 
         .menu_bar {
@@ -108,9 +111,8 @@
             grid-area: slider_title;
             align-self: center;
             background-color: #F0F1EA;
-            ;
-
-
+            margin-left: auto;
+            margin-right: auto;
 
         }
 
@@ -119,6 +121,7 @@
             grid-area: slider_image;
             background: url(Images/slider.jpg) 100% 100% no-repeat;
             background-size: cover;
+            width: 100%;
 
 
 
@@ -141,9 +144,11 @@
 
             color: #053634;
             /* position */
-            margin-left: 25%;
+            margin-left: 15%;
             margin-bottom: 0;
             margin-right: 10%;
+
+
 
         }
 
@@ -156,23 +161,25 @@
             line-height: 220%;
             color: #053634;
             /* position */
-            margin-left: 25%;
+            margin-left: 15%;
             margin-bottom: 10%;
+            margin-right: 10%;
+
 
 
         }
 
-        .slider_button {
+        button {
             /* button decoration */
             border: 1px solid #A4B7B1;
             background-color: #F0F1EA;
             width: 209px;
             height: 56px;
-            margin-left: 25%;
+            margin-left: 15%;
             margin-bottom: 9%;
         }
 
-        .slider_button a {
+        button a {
             text-decoration: none;
             font-family: 'Work Sans', sans-serif;
             font-style: normal;
@@ -186,9 +193,111 @@
 
         }
 
-        .slider_button:hover {
+        button:hover {
             background-color: #f6d044;
 
+        }
+
+        .brand {
+
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            align-items: center;
+            max-height: 2vh;
+
+            padding-top: 3%;
+            padding-bottom: 3%;
+            background-color: #F8F6F1;
+
+        }
+
+        .brand img {
+            padding: 7%;
+        }
+
+        .about_me {
+            /* grid_container */
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            /* position */
+            padding: 8%;
+            background-color: #F8F6F1;
+            gap: 3%;
+        }
+
+        .image_about {
+            /* grid_container */
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+
+        }
+
+        .image_about_1 {
+            /* position */
+            grid-column: 1 / span 8;
+            grid-row: 1;
+            max-width: 37vh;
+            z-index: 1;
+        }
+
+        .image_about_2 {
+            /* position */
+            grid-column: 3 / -1;
+            grid-row: 1;
+            padding-top: 21%;
+            max-width: 62vh;
+        }
+
+        .text_about {
+            /* position */
+            align-self: center;
+            justify-self: center;
+            padding: 5%;
+        }
+
+        h2 {
+            font-family: 'Playfair Display';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 64px;
+            /* identical to box height */
+
+            letter-spacing: 0.02em;
+            text-transform: capitalize;
+
+            color: #053634;
+
+        }
+
+        .text_about p {
+            font-family: 'Work Sans', sans-serif;
+            font-style: normal;
+            font-weight: 200;
+            font-size: 18px;
+            line-height: 220%;
+            /* or 40px */
+
+
+            color: #053634;
+        }
+
+        q {
+            font-family: 'Work Sans';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 26px;
+            line-height: 180%;
+            /* identical to box height, or 47px */
+
+            text-transform: capitalize;
+
+            color: #053634;
+
+        }
+
+        .button2 {
+            margin-left: 0;
         }
     </style>
 </head>
@@ -242,13 +351,37 @@
                 </button>
             </div>
             <div class="slider_img">
-
             </div>
         </div>
     </header>
-    <div class="brand"></div>
+    <div class="brand">
+        <img src="Images/logo1.svg" alt="">
+        <img src="Images/logo6.svg" alt="">
+        <img src="Images/logo3.svg" alt="">
+        <img src="Images/logo4.svg" alt="">
+        <img src="Images/logo2.svg" alt="">
+
+    </div>
     <main>
-        <section class="about_me"></section>
+        <section class="about_me">
+            <div class="image_about">
+                <img class="image_about_1" src="Images/me1.jpg" alt="">
+                <img class="image_about_2" src="Images/me2.jpg" alt="">
+            </div>
+            <div class="text_about">
+                <h2>About me</h2>
+                <q>"Everything is designed. Few things are designed well."</q>
+                <p>A pellentesque pretium feugiat vel morbi sagittis lorem habitasse cursus.
+                    Suspendisse tempus rhoncus enim pellentesque est in neque, elit mattis vehicula vitae eget.
+                    Viverra imperdiet felis sollicitudin tesque cursus sit.</p>
+                <p>Feugiat hac porttitor sem dictum velit, elementum odio. Sed ipsum quis nec ut eget facilisis.
+                    Quis nibh bibendum nisl quis placerat proin tortor. Mattis in neque, elit mattis morbi sagittis
+                    lorem habitasse consequat.</p>
+                <button class="button2">
+                    <a class="button2_name" href="#">Read more</a>
+                </button>
+            </div>
+        </section>
         <section class="services"></section>
         <section class="portfolio"></section>
         <section class="comments"></section>
