@@ -1,3 +1,9 @@
+body {
+    box-sizing: border-box;
+}
+body img {
+    width: 100%; max-width: 100%;}
+
 
 .container {
     /* grid container */
@@ -6,7 +12,7 @@
         "main aside"
         "footer footer";
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: 80px 1fr 80px;
+    grid-template-rows: 15% 1fr 15%;
     /* decoration */
     background-color: rgb(200, 197, 191);
     height: 100vh;
@@ -29,8 +35,8 @@
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
     justify-content: center;
-    row-gap: 10px;
-    padding: 10px;
+    row-gap: 5%;
+    padding: 5%;
     /* Grid area name*/
     grid-area: main;
     /*decoration*/
@@ -49,8 +55,8 @@
     /*position og grid elements*/
     align-items: center;
     gap: 1rem;
-    margin-right: 20px;
-    margin-left: 20px;
+    margin-right: 10%;
+    margin-left: 10%;
 }
 
 
@@ -108,9 +114,9 @@
 
 .footer div {
        /*position*/
-       margin-left: 20px;
-       margin-right: 20px;
-       padding: 19px;
+       margin-left: 10%;
+       margin-right: 10%;
+       padding: 5%;
        align-self: center;   
     /*decoration*/
     background-color: azure;
