@@ -55,8 +55,8 @@ body img {
     /*position og grid elements*/
     align-items: center;
     gap: 1rem;
-    margin-right: 10%;
-    margin-left: 10%;
+    margin-right: 5%;
+    margin-left: 5%;
 }
 
 
@@ -104,22 +104,24 @@ body img {
 .footer {
     /*container*/
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-template-rows: repeat(3, 200px);
     /*grid area*/
     grid-area: footer;
    /*elements in container*/
-    grid-template-rows: 7vh;
+    grid-template-rows: 8vh;
     align-content: space-around;
 }
 
 .footer div {
        /*position*/
-       margin-left: 10%;
-       margin-right: 10%;
+       margin-left: 5%;
+       margin-right: 5%;
        padding: 5%;
        align-self: center;   
     /*decoration*/
     background-color: azure;
     /*text decoration*/
     word-break: break-all;
+    
 }
