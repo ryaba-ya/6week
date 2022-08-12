@@ -1,0 +1,241 @@
+body {
+    box-sizing: border-box;
+}
+
+body img {
+    width: 100%;
+    max-width: 100%;
+}
+
+
+.container {
+    /* grid container */
+    display: grid;
+    grid-template-areas: " header header"
+        "main aside"
+        "footer footer";
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 15% 1fr 15%;
+    /* decoration */
+    background-color: rgb(200, 197, 191);
+    height: 100vh;
+    text-align: center;
+
+
+}
+
+.header {
+    /*grid area*/
+    grid-area: header;
+    /*position*/
+    padding: 10px;
+    align-self: center;
+
+}
+
+.main {
+    /* grid container*/
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    row-gap: 5%;
+    padding: 5%;
+    /* Grid area name*/
+    grid-area: main;
+    /*decoration*/
+    background-color: antiquewhite;
+
+}
+
+.main_grid2 {
+    /*grid cantainer*/
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: " one two "
+        " three three ";
+
+    /*position og grid elements*/
+    align-items: center;
+    gap: 1rem;
+    margin-right: 1%;
+    margin-left: 1%;
+}
+
+
+.one {
+    /*grid area*/
+    grid-area: one;
+    /*position of grid element*/
+    align-self: end;
+}
+
+.two {
+    /*grid area*/
+    grid-area: two;
+    /*position of grid element*/
+    align-self: end;
+
+}
+
+.three {
+    /*grid area*/
+    grid-area: three;
+    /*position of grid element*/
+    align-self: start;
+
+}
+
+.three .two .one .aside {
+    padding: 10px;
+}
+
+.main_grid2 div {
+    /*decoration*/
+    background-color: aliceblue;
+    /*size grid element*/
+    height: 13vh;
+
+}
+
+.aside {
+    /*grid area*/
+    grid-area: aside;
+    /*decoration*/
+    background-color: rgb(226, 247, 220);
+}
+
+.footer {
+    /*container*/
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /*grid area*/
+    grid-area: footer;
+    /*elements in container*/
+    grid-template-rows: 7vh;
+    align-content: space-around;
+}
+
+.footer div {
+    /*position*/
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 5%;
+    align-self: center;
+    /*decoration*/
+    background-color: azure;
+    /*text decoration*/
+    word-break: break-all;
+}
+
+@media only screen and (max-width:767px) {
+    .container {
+        /* grid container */
+        display: grid;
+        grid-template-areas: " header header"
+            "main aside"
+
+            "footer footer";
+        grid-template-columns: 1fr 20%;
+        grid-template-rows: 10% 1fr 10%;
+        /* decoration */
+
+
+    }
+
+    .main {
+        /* grid container*/
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        justify-content: center;
+        row-gap: 5%;
+        padding: 2%;
+        /* Grid area name*/
+        grid-area: main;
+        /*decoration*/
+        background-color: antiquewhite;
+
+    }
+
+    .main_grid2 {
+        /*grid cantainer*/
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: " one "
+            "two"
+            " three ";
+
+        /*position og grid elements*/
+        align-items: center;
+        gap: 1rem;
+        margin-right: 2%;
+        margin-left: 2%;
+    }
+
+    .one {
+        /*grid area*/
+        grid-area: one;
+        /*position of grid element*/
+
+    }
+
+    .two {
+        /*grid area*/
+        grid-area: two;
+        /*position of grid element*/
+
+
+    }
+
+    .three {
+        /*grid area*/
+        grid-area: three;
+        /*position of grid element*/
+
+
+    }
+
+    .three .two .one .aside {
+        padding: 10px;
+    }
+
+    .main_grid2 div {
+        /*decoration*/
+        background-color: aliceblue;
+        /*size grid element*/
+        height: 18vh;
+
+    }
+}
+
+@media only screen and (max-width:479px) {
+    .container {
+        display: grid;
+        grid-template-areas: " header header "
+            "main main"
+            "aside aside"
+            "footer footer";
+
+        grid-template-rows: 10% 1fr 1fr 10%;
+
+
+    }
+
+
+
+    .main_grid2 div {
+        /*decoration*/
+        background-color: aliceblue;
+        /*size grid element*/
+        height: 15vw;
+
+    }
+
+
+    @media only screen and (max-width:1024px) {}
+
+    @media only screen and (max-width:1920px) {}
+}
