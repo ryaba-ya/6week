@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.norm.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            box-sizing: border-box;
+            padding-left: 5%;
+            padding-right: 5%;
+            margin-top: 3%;
+            max-width: 100%;
+        
+        }
+        .header{
+            display: grid;
+            grid-template-rows: 1fr 5fr;
+            grid-template-areas: "header"
+            "slider";
+        }
+        .header_nav{
+            display: grid;
+            grid-template-rows: 1fr;
+            grid-template-columns: 0.5fr  1fr 1fr 0.5fr;
+            grid-template-areas: "logo  menu menu button1"
+            ;
+            grid-area: header;
+        }
+        .logo{
+            grid-area: logo;
+        }
+        .logo p{
+            font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 40px;
+line-height: 60px;
+/* identical to box height */
+margin: 0;
+text-align: center;
+
+/* Dark 02 */
+
+color: #4A4A4A;
+
+        }
+        .header_menu{
+            grid-area: menu;
+            display: inline;
+
+        }
+        .header_menu li{
+            
+            display: inline;
+            margin: 3%;
+        }
+        .header_menu li a{
+            text-decoration: none;
+            font-family: 'Work Sans', sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 27px;
+/* identical to box height */
+
+text-align: center;
+
+/* Dark 03 */
+
+color: #777777;
+
+
+        }
+        .button_register{
+            grid-area: button1;
+            width: 150px;
+height: 56px;
+
+        }
+        
+       
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="header_nav">
+            <div class="logo">
+                <p>Pro Edu</p>
+            </div>
+            
+            <ul class="header_menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">Deals</a></li>
+                <li><a href="#">Succes</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Register</a></li>
+            </ul>
+            
+            <button class="button_register">
+                <a href="">Register</a>
+            </button>
+        </nav>
+        <div class="slider">
+            <div class="">
+                <h1>Get Started Digital Learning</h1>
+                <button class="button_started"><a href="#">Get started</a></button>
+            </div>
+
+        </div>
+    </header>
+
+</body>
+
+</html>

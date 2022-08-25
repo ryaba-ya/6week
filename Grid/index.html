@@ -126,13 +126,8 @@
         .slider_img {
             /* name_area */
             grid-area: slider_image;
-            background: url(Images/slider.jpg) 100% 100% no-repeat;
-            background-size: cover;
-            width: 100%;
-
-
-
-
+          position: relative;
+          overflow: hidden;
 
         }
 
@@ -223,6 +218,14 @@
             max-width: 45%;
 
         }
+        .slider_image{
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
 
         .about_me {
             /* grid_container */
@@ -264,7 +267,7 @@
             padding: 5%;
         }
 
-        h2 {
+        h2,h3 {
             font-family: 'Playfair Display';
             font-style: normal;
             font-weight: 700;
@@ -283,7 +286,7 @@
             font-family: 'Work Sans', sans-serif;
             font-style: normal;
             font-weight: 200;
-            font-size: 1.125empx;
+            font-size: 1.125em;
             line-height: 220%;
             /* or 40px */
 
@@ -307,6 +310,83 @@
 
         .button2 {
             margin-left: 0;
+        }
+        .serv_p{
+            font-family: 'Work Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 26px;
+line-height: 180%;
+/* identical to box height, or 47px */
+
+text-transform: capitalize;
+
+color: #053634;
+
+        }
+        .serv__p, .serv___p{
+            font-family: 'Work Sans', sans-serif;
+            font-style: normal;
+            font-weight: 200;
+            font-size: 1.125em;
+            line-height: 220%;
+            /* or 40px */
+            width: 100%;
+
+            color: #053634;
+            
+        }
+        .services_grid{
+           
+            grid-area: service;
+            align-self: center;
+            background-color: #F0F1EA;
+            margin-left: auto;
+            margin-right: auto;
+            
+            
+            
+           
+        
+            
+        }
+        .services{
+            display: grid;
+            grid-template-columns:1.7fr 2fr ;
+            grid-template-areas: "service" "serv_image";
+            align-items: center;
+
+        }
+        h3,.serv_p,.serv__p,.serv___p{
+            margin-left: 15%;
+    margin-bottom: 0;
+    margin-right: 10%;
+    max-width: 531px;
+        }
+        .services_images{
+            margin-right: 15%;
+            position: relative;
+            
+        }
+        h3{
+            /* text decoration */
+
+            Font-family: 'Playfair Display';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 4.124em;
+            line-height: 126%;
+            /* or 83px */
+
+            letter-spacing: 0.02em;
+            text-transform: capitalize;
+
+            color: #053634;
+            /* position */
+            margin-left: 15%;
+            margin-bottom: 0;
+            margin-right: 10%;
+
         }
     </style>
 </head>
@@ -360,7 +440,7 @@
                 </button>
             </div>
             <div class="slider_img">
-
+<img class="slider_image" src="Images/slider.jpg">
             </div>
         </div>
     </header>
@@ -389,10 +469,36 @@
                     lorem habitasse consequat.</p>
                 <button class="button2">
                     <a class="button2_name" href="#">Read more</a>
+                    <svg width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M12.9422 0L11.882 1.07084L15.107 4.25584H0V5.74416H15.107L11.8828 8.9299L12.9422 10L18 5L12.9422 0Z"
+                            fill="#053634" />
+                    </svg>
                 </button>
             </div>
         </section>
-        <section class="services"></section>
+        <section class="services">
+            <div class="services_grid">
+                <h3>Services</h3>
+                <p class="serv_p">Some of my capabilities for your solutions.</p>
+                <p class="serv__p">Feugiat hac porttitor sem dictum velit, elementum odio.
+                     Sed ipsum quis nec eget facilisis. Quis nibh ut bibendum 
+                    nisl quis placerat proin tortor. Mattis in neque.</p>
+                <p class="serv___p">Feugiat hac porttitor sem dictum velit, elementum odio. Sed ipsum quis 
+                    nec eget facilisis quis nibh ut bibendum.</p>
+                <button>
+                    <a href="">Contact me</a>
+                    <svg width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M12.9422 0L11.882 1.07084L15.107 4.25584H0V5.74416H15.107L11.8828 8.9299L12.9422 10L18 5L12.9422 0Z"
+                            fill="#053634" />
+                    </svg>
+                </button>
+            </div>
+            <div class="services_images">
+                <img src="Images/servise.png">
+            </div>
+        </section>
         <section class="portfolio"></section>
         <section class="comments"></section>
         <section class="newsletter"></section>
