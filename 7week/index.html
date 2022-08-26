@@ -10,116 +10,133 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <style>
-        body {
-            box-sizing: border-box;
-            padding-left: 5%;
-            padding-right: 5%;
-            margin-top: 3%;
-            max-width: 100%;
-        
-        }
-        .header{
-            display: grid;
-            grid-template-rows: 1fr 5fr;
-            grid-template-areas: "header"
-            "slider";
-        }
-        .header_nav{
-            display: grid;
-            grid-template-rows: 1fr;
-            grid-template-columns: 0.5fr  1fr 1fr 0.5fr;
-            grid-template-areas: "logo  menu menu button1"
-            ;
-            grid-area: header;
-        }
-        .logo{
-            grid-area: logo;
-        }
-        .logo p{
-            font-family: 'Poppins';
-font-style: normal;
-font-weight: 600;
-font-size: 40px;
-line-height: 60px;
-/* identical to box height */
-margin: 0;
-text-align: center;
-
-/* Dark 02 */
-
-color: #4A4A4A;
-
-        }
-        .header_menu{
-            grid-area: menu;
-            display: inline;
-
-        }
-        .header_menu li{
-            
-            display: inline;
-            margin: 3%;
-        }
-        .header_menu li a{
-            text-decoration: none;
-            font-family: 'Work Sans', sans-serif;
-font-style: normal;
-font-weight: 400;
-font-size: 18px;
-line-height: 27px;
-/* identical to box height */
-
-text-align: center;
-
-/* Dark 03 */
-
-color: #777777;
-
-
-        }
-        .button_register{
-            grid-area: button1;
-            width: 150px;
-height: 56px;
-
-        }
-        
-       
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.grid.css">
+    
+      
 </head>
 
-<body>
-    <header>
-        <nav class="header_nav">
-            <div class="logo">
-                <p>Pro Edu</p>
-            </div>
-            
-            <ul class="header_menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Courses</a></li>
-                <li><a href="#">Deals</a></li>
-                <li><a href="#">Succes</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Register</a></li>
-            </ul>
-            
-            <button class="button_register">
-                <a href="">Register</a>
-            </button>
-        </nav>
-        <div class="slider">
-            <div class="">
-                <h1>Get Started Digital Learning</h1>
-                <button class="button_started"><a href="#">Get started</a></button>
-            </div>
 
+
+<body>
+    <header class="header_grid">
+        <div class="navbar">
+            <div class="logo">
+                <svg width="119" height="79" viewBox="0 0 119 79" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M48.336 26C48.848 26.112 49.328 26.176 49.792 26.176C51.664 26.176 52.768 25.248 52.768 23.376V15.44H51.072V23.2C51.072 24.272 50.528 24.624 49.424 24.624C49.184 24.624 48.816 24.592 48.336 24.544V26ZM57.6617 26H64.7978V24.48H59.3577V21.136H63.3098V19.664H59.3577V16.96H64.6058V15.44H57.6617V26ZM68.2591 23.888C69.0751 25.312 70.5151 26.176 72.2431 26.176C74.2751 26.176 75.7791 24.96 75.7791 23.12C75.7791 21.728 74.9631 20.896 73.2511 20.112L72.0671 19.568C71.0271 19.04 70.6591 18.896 70.5951 18.064C70.5951 17.232 71.2991 16.784 72.1951 16.784C73.0911 16.784 73.8591 17.232 74.4191 18.064L75.6031 17.152C74.9471 16.016 73.6831 15.264 72.1951 15.264C70.3711 15.264 68.8671 16.4 68.8671 18.128C68.8671 19.536 69.7951 20.352 71.3311 21.056L72.4991 21.6C73.6031 22.112 74.0511 22.432 74.0511 23.184C74.0511 24.08 73.3151 24.656 72.2271 24.656C71.0111 24.656 70.1631 24 69.4591 22.976L68.2591 23.888ZM79.3585 23.888C80.1745 25.312 81.6145 26.176 83.3425 26.176C85.3745 26.176 86.8785 24.96 86.8785 23.12C86.8785 21.728 86.0625 20.896 84.3505 20.112L83.1665 19.568C82.1265 19.04 81.7585 18.896 81.6945 18.064C81.6945 17.232 82.3985 16.784 83.2945 16.784C84.1905 16.784 84.9585 17.232 85.5185 18.064L86.7025 17.152C86.0465 16.016 84.7825 15.264 83.2945 15.264C81.4705 15.264 79.9665 16.4 79.9665 18.128C79.9665 19.536 80.8945 20.352 82.4305 21.056L83.5985 21.6C84.7025 22.112 85.1505 22.432 85.1505 23.184C85.1505 24.08 84.4145 24.656 83.3265 24.656C82.1105 24.656 81.2625 24 80.5585 22.976L79.3585 23.888ZM91.288 26H98.424V24.48H92.984V21.136H96.936V19.664H92.984V16.96H98.232V15.44H91.288V26Z"
+                        fill="#053634" />
+                    <path
+                        d="M49.632 46.677C49.632 46.847 49.785 47 49.955 47H50.635C50.805 47 50.958 46.847 50.958 46.677V35.423C50.958 35.253 50.805 35.1 50.635 35.1H49.955C49.785 35.1 49.632 35.253 49.632 35.423V46.677ZM54.8118 46.626C54.8118 46.83 54.9818 47 55.1858 47H55.6958C55.8828 47 56.0698 46.83 56.0698 46.626V41.203C56.0698 41.203 57.0048 40.115 58.4838 40.115C59.6398 40.115 60.1498 40.812 60.1498 42.308V46.626C60.1498 46.83 60.3198 47 60.5238 47H61.0338C61.2208 47 61.4078 46.83 61.4078 46.626V42.478C61.4078 40.455 60.8468 38.976 58.5688 38.976C56.9368 38.976 55.9338 39.979 55.9338 39.979L55.7638 39.384C55.7298 39.214 55.6278 39.146 55.4578 39.146H55.1858C54.9818 39.146 54.8118 39.333 54.8118 39.52V46.626ZM65.4229 40.234V45.011C65.4229 46.235 65.7289 47.187 67.2249 47.187C68.2789 47.187 69.0949 46.796 69.4349 46.558C69.6389 46.422 69.6729 46.303 69.5709 46.048L69.4179 45.691C69.3329 45.504 69.2309 45.351 68.9249 45.538C68.6019 45.742 68.1089 46.048 67.3779 46.048C66.9359 46.048 66.6809 45.742 66.6809 44.926V40.234H68.9929C69.2139 40.234 69.3839 40.064 69.3839 39.86V39.52C69.3839 39.299 69.2139 39.146 68.9929 39.146H66.6809V36.936C66.6809 36.732 66.5279 36.545 66.3239 36.562L65.7969 36.596C65.6099 36.613 65.4229 36.766 65.4229 36.97V39.146H64.3859C64.1479 39.146 63.9949 39.299 63.9949 39.52V39.86C63.9949 40.064 64.1479 40.234 64.3859 40.234H65.4229ZM71.8813 43.073C71.8813 45.317 73.3093 47.187 75.6893 47.187C77.0493 47.187 78.0863 46.66 78.5623 46.286C78.8513 46.065 78.7833 45.98 78.6303 45.742L78.4263 45.453C78.2223 45.147 78.1033 45.215 77.8313 45.402C77.3893 45.691 76.7433 46.048 75.7063 46.048C74.2783 46.048 73.1733 44.671 73.1393 43.362H78.8513C79.0213 43.362 79.1913 43.226 79.2083 43.022C79.2253 42.886 79.2423 42.682 79.2423 42.546C79.2423 40.489 77.7463 38.976 75.6893 38.976C73.3093 38.976 71.8813 40.863 71.8813 43.073ZM73.1563 42.359C73.3093 41.135 74.3633 40.115 75.6893 40.115C77.0323 40.115 77.9503 41.203 77.9843 42.359H73.1563ZM82.3259 46.626C82.3259 46.83 82.4959 47 82.6999 47H83.2099C83.3969 47 83.5839 46.83 83.5839 46.626V41.186C83.5839 41.186 84.1959 40.183 85.7089 40.183C86.0829 40.183 86.3719 40.319 86.5589 40.404C86.7459 40.489 86.9329 40.472 87.0179 40.217L87.2389 39.605C87.4259 39.061 86.4569 38.976 85.8619 38.976C84.2299 38.976 83.4479 39.979 83.4479 39.979L83.3119 39.418C83.2609 39.231 83.1249 39.146 82.9719 39.146H82.6999C82.4959 39.146 82.3259 39.333 82.3259 39.52V46.626ZM90.4985 37.123C91.0255 37.123 91.4335 36.698 91.4335 36.205C91.4335 35.661 91.0255 35.253 90.4985 35.253C89.9885 35.253 89.5805 35.661 89.5805 36.205C89.5805 36.698 89.9885 37.123 90.4985 37.123ZM89.9035 46.626C89.9035 46.83 90.0735 47 90.2775 47H90.7875C90.9745 47 91.1615 46.83 91.1615 46.626V39.52C91.1615 39.333 90.9745 39.146 90.7875 39.146H90.2775C90.0735 39.146 89.9035 39.333 89.9035 39.52V46.626ZM94.3315 43.056C94.3315 45.3 96.0995 47.187 98.2755 47.187C100.452 47.187 102.22 45.3 102.22 43.056C102.22 40.846 100.452 38.976 98.2755 38.976C96.0995 38.976 94.3315 40.846 94.3315 43.056ZM95.5725 43.056C95.5725 41.458 96.7285 40.115 98.2755 40.115C99.8225 40.115 100.962 41.458 100.962 43.056C100.962 44.688 99.8225 46.048 98.2755 46.048C96.7285 46.048 95.5725 44.688 95.5725 43.056ZM105.374 46.626C105.374 46.83 105.544 47 105.748 47H106.258C106.445 47 106.632 46.83 106.632 46.626V41.186C106.632 41.186 107.244 40.183 108.757 40.183C109.131 40.183 109.42 40.319 109.607 40.404C109.794 40.489 109.981 40.472 110.066 40.217L110.287 39.605C110.474 39.061 109.505 38.976 108.91 38.976C107.278 38.976 106.496 39.979 106.496 39.979L106.36 39.418C106.309 39.231 106.173 39.146 106.02 39.146H105.748C105.544 39.146 105.374 39.333 105.374 39.52V46.626ZM115.145 47.187C116.743 47.187 117.814 46.184 117.814 44.943C117.814 43.515 116.641 43.005 115.281 42.376C114.329 41.934 113.785 41.679 113.785 40.982C113.785 40.608 114.074 40.115 114.941 40.115C115.672 40.115 116.216 40.37 116.556 40.574C116.726 40.676 116.981 40.659 117.1 40.438L117.27 40.115C117.389 39.894 117.355 39.724 117.185 39.588C116.811 39.316 115.961 38.976 114.941 38.976C113.122 38.976 112.51 40.217 112.51 41.033C112.51 42.376 113.7 42.937 114.737 43.447C115.876 44.008 116.488 44.314 116.488 45.062C116.488 45.674 115.944 46.048 115.145 46.048C114.142 46.048 113.462 45.555 113.19 45.351C112.969 45.198 112.833 45.266 112.731 45.453L112.493 45.895C112.425 46.031 112.459 46.15 112.544 46.235C112.952 46.609 113.836 47.187 115.145 47.187Z"
+                        fill="#5F7D78" />
+                    <path
+                        d="M23.18 47.556V17.422H28.792V16.568H8.723V17.422H14.335V56.035C14.335 56.401 14.3147 56.828 14.274 57.316C14.274 57.7633 14.1927 58.1903 14.03 58.597C13.8673 59.0037 13.603 59.3493 13.237 59.634C12.9117 59.878 12.4033 60 11.712 60C11.5493 60 11.3053 60 10.98 60C10.6953 59.9593 10.4107 59.878 10.126 59.756C9.84133 59.5933 9.577 59.3493 9.333 59.024C9.12967 58.6987 9.028 58.231 9.028 57.621C9.028 57.4583 9.06867 57.1737 9.15 56.767C9.23133 56.3603 9.333 55.913 9.455 55.425C9.577 54.937 9.67867 54.4693 9.76 54.022C9.84133 53.5747 9.882 53.2087 9.882 52.924C9.882 52.2733 9.73967 51.765 9.455 51.399C9.211 50.9923 8.88567 50.6873 8.479 50.484C8.113 50.2807 7.70633 50.1587 7.259 50.118C6.85233 50.0367 6.48633 49.996 6.161 49.996C4.941 49.996 4.00567 50.1993 3.355 50.606C2.70433 50.972 2.21633 51.399 1.891 51.887C1.60633 52.375 1.44367 52.863 1.403 53.351C1.36233 53.7983 1.342 54.1237 1.342 54.327C1.342 55.6283 1.647 56.706 2.257 57.56C2.867 58.414 3.63967 59.085 4.575 59.573C5.51033 60.061 6.54733 60.3863 7.686 60.549C8.82467 60.7523 9.92267 60.854 10.98 60.854C13.9893 60.854 16.3073 60.3457 17.934 59.329C19.6013 58.3123 20.8213 57.1127 21.594 55.73C22.3667 54.3067 22.814 52.8427 22.936 51.338C23.0987 49.8333 23.18 48.5727 23.18 47.556Z"
+                        fill="#053634" />
+                    <path
+                        d="M30.378 56.279C30.378 57.4583 30.805 58.475 31.659 59.329C32.513 60.1423 33.5297 60.549 34.709 60.549C35.8883 60.549 36.905 60.1423 37.759 59.329C38.613 58.475 39.04 57.4583 39.04 56.279C39.04 55.0997 38.613 54.083 37.759 53.229C36.905 52.375 35.8883 51.948 34.709 51.948C33.5297 51.948 32.513 52.375 31.659 53.229C30.805 54.083 30.378 55.0997 30.378 56.279Z"
+                        fill="#EBB017" />
+                </svg>
+            </div>
+            <nav class="menu_bar">
+                <ul class="menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Works</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <nav class="burger_menu"></nav>
+        </div>
+        <div class="slider">
+            <div class="slider_main_grid">
+                <h1 class="slider_title">Nautical Modern Style</h1>
+                <p class="slider_text">Suspendisse tempus rhoncus enim
+                    pellentesque est vehicula vitae eget. Viverra imperdiet
+                    felis sollicitudin pellentesque cursus sit feugiat hac porttitor.</p>
+                <button class="slider_button">
+                    <a class="button_name" href="#">View Project</a>
+                    <svg width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M12.9422 0L11.882 1.07084L15.107 4.25584H0V5.74416H15.107L11.8828 8.9299L12.9422 10L18 5L12.9422 0Z"
+                            fill="#053634" />
+                    </svg>
+                </button>
+            </div>
+            <div class="slider_img">
+<img class="slider_image" src="Images/slider.jpg">
+            </div>
         </div>
     </header>
+    <div class="brand">
+        <img src="Images/logo1.svg" alt="">
+        <img src="Images/logo6.svg" alt="">
+        <img src="Images/logo3.svg" alt="">
+        <img src="Images/logo4.svg" alt="">
+        <img src="Images/logo2.svg" alt="">
 
+    </div>
+    <main>
+        <section class="about_me">
+            <div class="image_about">
+                <img class="image_about_1" src="Images/me1.jpg" alt="">
+                <img class="image_about_2" src="Images/me2.jpg" alt="">
+            </div>
+            <div class="text_about">
+                <h2>About me</h2>
+                <q>"Everything is designed. Few things are designed well."</q>
+                <p>A pellentesque pretium feugiat vel morbi sagittis lorem habitasse cursus.
+                    Suspendisse tempus rhoncus enim pellentesque est in neque, elit mattis vehicula vitae eget.
+                    Viverra imperdiet felis sollicitudin tesque cursus sit.</p>
+                <p>Feugiat hac porttitor sem dictum velit, elementum odio. Sed ipsum quis nec ut eget facilisis.
+                    Quis nibh bibendum nisl quis placerat proin tortor. Mattis in neque, elit mattis morbi sagittis
+                    lorem habitasse consequat.</p>
+                <button class="button2">
+                    <a class="button2_name" href="#">Read more</a>
+                    <svg width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M12.9422 0L11.882 1.07084L15.107 4.25584H0V5.74416H15.107L11.8828 8.9299L12.9422 10L18 5L12.9422 0Z"
+                            fill="#053634" />
+                    </svg>
+                </button>
+            </div>
+        </section>
+        <section class="services">
+            <div class="container">
+                <div class="services-row">
+                    <div class="services-content">
+                        <h3 class="services-heading">Services</h3>
+                        <div class="services-text">
+                            <p>Some of my capabilities for your solutions.</p>
+
+                            <p>Feugiat hac porttitor sem dictum velit, elementum odio.
+                                 Sed ipsum quis nec eget facilisis. Quis nibh ut bibendum 
+                                 nisl quis placerat proin tortor. Mattis in neque.</p>
+
+                            <p>Feugiat hac porttitor sem dictum velit, elementum odio. 
+                                Sed ipsum quis nec eget facilisis quis nibh ut bibendum.</p>
+                        </div>
+                        <div class="services-button">
+                            <a href="" class="btn"
+                        </div>
+                    </div>
+                    <div class="services-img"></div>
+
+                </div>
+
+            </div>
+        </section>
+        <section class="portfolio"></section>
+        <section class="comments"></section>
+        <section class="newsletter"></section>
+        <article class="blog"></article>
+        <section class="contact_me"></section>
+        <footer class=""></footer>
+    </main>
 </body>
 
 </html>
